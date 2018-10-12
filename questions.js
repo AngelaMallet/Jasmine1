@@ -63,9 +63,13 @@ var valeurAbsolue = function (nombre) {
     return  Math.abs(5);
 }
 var valeurAbsolueArray = function (array) {
-
-    return ;
+  var result = [];
+  for(var i = 0; i < array.length; i++) {
+    var calcul = Math.abs(array[i]);
+    result.push(calcul);
   }
+  return result;
+}
 var sufaceCercle = function (rayon) {
     return Math.round(Math.PI * (rayon * rayon));
 
